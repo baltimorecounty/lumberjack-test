@@ -1,0 +1,52 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Lumberjack API",
+		"_postman_id": "6c733f56-b23a-7e53-52a7-513cdc87757a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DEV - GET - Logs by Date",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api/1.0.0/logs?date=20170815",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"1.0.0",
+						"logs"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "20170815",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\": \"error\",\n    \"message\": \"from postman\",\n    \"browser\": \"external\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
