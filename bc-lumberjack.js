@@ -107,9 +107,9 @@ var Lumberjack = (function () {
         lumberjack.options = options || {};
         lumberjack.options.appName = options.appName || null;
         lumberjack.options.apiUrl = options.apiUrl || console.error('please provide an api url');
-        lumberjack.options.debugMode = options.debugMode || 'console-server'; // console-only, server-only, console-server, null
-        lumberjack.isConsoleLoggingEnabled = lumberjack.options.debugMode && lumberjack.options.debugMode.indexOf('console') > -1;
-        lumberjack.isApiLoggingEnabled = lumberjack.options.debugMode && lumberjack.options.debugMode.indexOf('server') > -1;
+        lumberjack.options.mode = options.mode || 'console-server'; // console-only, server-only, console-server, null
+        lumberjack.isConsoleLoggingEnabled = lumberjack.options.mode && lumberjack.options.mode.indexOf('console') > -1;
+        lumberjack.isApiLoggingEnabled = lumberjack.options.mode && lumberjack.options.mode.indexOf('server') > -1;
     }
 
     function debug() {
